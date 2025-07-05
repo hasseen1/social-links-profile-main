@@ -15,13 +15,15 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      overflow-wrap: break-word;
     }
     html, body{
-      height: 100%;
+      min-height: 100vh;
       color: white;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     main{
+      min-height: 100vh;
       border: 1px solid black;
       width: 100%;
       height: 100%;
@@ -31,19 +33,20 @@
       align-items: center;justify-content: center;
     }
     .container{
-      height: 70%;
-      max-width: 360px;
+      height: 60%;
+      max-width: 400px;
       width: 90%;
       background: linear-gradient(rgb(15, 14, 14), rgb(19, 18, 18), rgb(32, 30, 30), rgb(54, 49, 49), rgb(32, 30, 30), rgb(19, 18, 18), rgb(15, 14, 14));
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 10px;
+      padding: 2rem 1rem;
       border-radius: 10px;
       text-align: center;
       margin-bottom: 30px;
     }
     .container .user_info{
+      height: 30%;
       margin: 5px 5px 20px 5px;
       line-height: 1.5;
     }
@@ -68,11 +71,16 @@
       color: hsl(75, 94%, 57%);
       font-weight: 600;
     }
+    .link_social{
+      margin: auto;
+      height: 50%;
+    }
     .link_social li{
       list-style-type: none;
       background-color: rgb(69, 63, 63);
       max-width: 300px;
       width: 60vw;
+      max-height: 50px;
       height: 35px;
       margin-top: 15px;
       padding: 10px;
